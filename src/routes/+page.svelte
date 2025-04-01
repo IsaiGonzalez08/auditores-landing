@@ -1,7 +1,7 @@
 <script lang="ts">
 	import PrimaryButton from '$lib/components/PrimaryButton.svelte';
 	import SecondaryButton from '$lib/components/SecondaryButton.svelte';
-	import Section from '$lib/components/Section.svelte';
+	import Section from '$lib/components/init/SectionDetails.svelte';
 
 	let information = [
 		{ title: '20', subtitle: 'Años de', details: 'Experiencia' },

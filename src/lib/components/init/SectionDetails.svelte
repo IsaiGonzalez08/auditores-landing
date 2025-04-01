@@ -1,14 +1,16 @@
 <script lang="ts">
-	import SecondaryButton from './SecondaryButton.svelte';
+	import SecondaryButton from '../SecondaryButton.svelte';
 
 	let { title, showLabel = false, details, button = '', image = '', reverseRow = false } = $props();
 </script>
 
 <div class="flex w-full {reverseRow ? 'flex-row-reverse' : ''} flex-row items-center">
-	<div class="flex basis-1/2 {reverseRow ? 'justify-end' : 'justify-start'} ">
-		<img class="h-[572px] max-w-[500px]" src="/images/{image}.png" alt="auditories" />
-	</div>
-	<div class="basis-1/2">
+	{#if image}
+		<div class="flex basis-1/2 {reverseRow ? 'justify-end' : 'justify-start'} ">
+			<img class="h-[572px] max-w-[500px]" src="/images/{image}.png" alt="auditories" />
+		</div>
+	{/if}
+	<div class="basis-1/2 w-full">
 		<div class="flex w-full flex-col">
 			<div class="flex flex-row justify-between">
 				<div class="flex flex-col">
