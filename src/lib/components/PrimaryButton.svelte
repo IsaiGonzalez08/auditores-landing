@@ -1,7 +1,7 @@
 <script lang="ts">
-	let { title } = $props();
+	let { title, onClick } = $props();
 </script>
 
-<button class="bg-primary text-[#FCFEFE] py-2 px-6 rounded-xl font-semibold">
+<button onclick={onClick} class="bg-primary rounded-xl px-6 py-2 font-semibold text-[#FCFEFE] cursor-pointer">
 	{title}
 </button>
