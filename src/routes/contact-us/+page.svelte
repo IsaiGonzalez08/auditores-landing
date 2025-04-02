@@ -24,12 +24,12 @@
 
 <SectionHeader title="Contáctanos" image="contact-header" />
 
-<div class="p-20">
+<div class="p-5 md:p-8 xl:p-20">
 	<p class="text-3xl font-semibold text-[#397A80]">Contacto</p>
 	<p class="font-light text-[#A1ADAF]">González Ruiz Auditores</p>
-	<hr class="bg-primary mt-4 h-0.5 w-full max-w-[500px] border-none" />
+	<hr class="bg-primary mt-4 h-0.5 w-full sm:w-1/2 border-none" />
 
-	<div class="mt-6 flex flex-col gap-8 sm:flex-row sm:gap-0">
+	<div class="mt-6 flex flex-col gap-10 lg:flex-row sm:gap-8">
 		<div class="flex basis-1/2 flex-col">
 			{#each address as item}
 				<p class="poppins">{item}</p>
