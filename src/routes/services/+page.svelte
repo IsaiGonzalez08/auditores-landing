@@ -70,7 +70,7 @@
 
 <SectionHeader title="Servicios" image="services-header" />
 
-<div class="p-20">
+<div class="p-5 md:p-8 xl:p-20">
 	{#if servicesCards.length}
 		<div class="flex flex-col">
 			{#each servicesCards as item}
@@ -78,8 +78,8 @@
 				<p class="font-light text-[#A1ADAF]">González Ruiz Auditores</p>
 				<hr class="bg-primary mt-4 h-0.5 w-full max-w-[500px] border-none" />
 				{#if item.services.length}
-					<div class="my-14 flex justify-center">
-						<div class="grid grid-cols-1 grid-rows gap-10 xl:grid-cols-3 xl:grid-rows-1">
+					<div class="my-14 flex justify-center sm:justify-start">
+						<div class="grid-rows grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
 							{#each item.services as card}
 								<ServiceCard
 									image={card.image}

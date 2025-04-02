@@ -63,7 +63,7 @@
 		</div>
 	</div>
 	<div class="mt-6.5">
-		<hr class="bg-primary hidden h-0.5 lg:block" />
+		<hr class="bg-primary hidden h-0.5 xl:block" />
 		<h4 class="font-poppins mt-4 text-xs text-[#777575]">©2025 Auditores GZ.</h4>
 	</div>
 </footer>
