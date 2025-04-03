@@ -13,6 +13,14 @@
 	const navigateToContact = () => {
 		goto('/contact-us');
 	};
+
+	const navigateToAbout = () => {
+		goto('/about-us');
+	};
+
+	const navigateToServices = () => {
+		goto('/services');
+	};
 </script>
 
 <main>
@@ -28,7 +36,7 @@
 				servicios de auditoría, consultoría y asesoramiento fiscal.
 			</p>
 			<div class="flex justify-center lg:justify-start">
-				<SecondaryButton title="Quienes somos" />
+				<SecondaryButton title="Quienes somos" onClick={navigateToAbout} />
 			</div>
 			<div class="mt-10 flex flex-row items-end justify-center gap-4 lg:justify-start">
 				{#each information as item, index}
@@ -58,6 +66,7 @@
 			showLabel={true}
 			details="Servicio para empresas o entidades gubernamentales que opten o estén obligados a dictaminar sus estados financieros, procesos administrativos, políticas y procedimientos, impuestos, obligaciones fiscales y patronales, etc."
 			button="Categorías"
+			onClick={navigateToServices}
 		/>
 	</div>
 	<div class="w-full bg-white xl:px-20">
@@ -68,6 +77,7 @@
 			details="Consiste en el análisis de los objetivos de la empresa, para verificar que los procesos que se realizan para alcanzarlos son los más adecuados. Estos proyectos son de un largo alcance, y se realizan conjuntamente con el personal de las empresas."
 			button="Categorías"
 			reverseRow={true}
+			onClick={navigateToServices}
 		/>
 	</div>
 	<div class="bg-sidebar flex w-full flex-row items-center justify-center p-7 lg:p-0 xl:pr-20">

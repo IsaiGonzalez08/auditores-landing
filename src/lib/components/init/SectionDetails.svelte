@@ -1,7 +1,7 @@
 <script lang="ts">
 	import SecondaryButton from '../SecondaryButton.svelte';
 
-	let { title, showLabel = false, details, button = '', image = '', reverseRow = false } = $props();
+	let { title, showLabel = false, details, button = '', image = '', reverseRow = false, onClick } = $props();
 </script>
 
 <div
@@ -33,7 +33,7 @@
 			<p class="mt-8 text-justify text-sm tracking-widest sm:text-base sm:leading-7">{details}</p>
 			<div class="mt-12 flex justify-center">
 				{#if button.length}
-					<SecondaryButton title={button} />
+					<SecondaryButton title={button} onClick={onClick} />
 				{/if}
 			</div>
 		</div>

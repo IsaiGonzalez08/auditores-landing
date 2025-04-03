@@ -3,12 +3,12 @@
 </script>
 
 <SectionHeader title="Sobre Nosotros" image="about-us" />
-<main class="w-full px-24 py-20">
-	<div class="flex w-full items-center justify-around gap-15">
+<main class="w-full p-10 xl:px-24 lg:py-20">
+	<div class="flex w-full flex-col-reverse sm:flex-row items-center justify-around gap-15">
 		<div class="basis-1/2">
-			<img class="h-[400px]" src="/images/about-us-subsection.png" alt="subsection-about" />
+			<img class="rounded-2xl sm:rounded-none h-[400px]" src="/images/about-us-subsection.png" alt="subsection-about" />
 		</div>
-		<div class="basis-1/2">
+		<div class="w-full sm:basis-1/2">
 			<h2 class="text-3xl font-semibold text-[#397A80]">Sobre Nosotros</h2>
 			<p class="font-light text-[#A1ADAF]">González Ruiz Auditores</p>
 			<hr class="bg-primary mt-6 h-0.5 w-full border-none" />
@@ -29,7 +29,7 @@
 		nuestros clientes del cumplimiento correcto de sus obligaciones en materia fiscal y de seguridad
 		social.
 	</p>
-	<div class="mt-20 flex w-full justify-around gap-15">
+	<div class="mt-20 flex flex-col lg:flex-row w-full justify-around gap-15">
 		<div class="flex w-full flex-col">
 			<h2 class="text-2xl font-semibold text-[#397A80]">Misión</h2>
 			<hr class="bg-primary h-0.5 w-full border-none" />
