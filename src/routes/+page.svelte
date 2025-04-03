@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import PrimaryButton from '$lib/components/PrimaryButton.svelte';
 	import SecondaryButton from '$lib/components/SecondaryButton.svelte';
 	import Section from '$lib/components/init/SectionDetails.svelte';
@@ -8,24 +9,33 @@
 		{ title: '20', subtitle: 'Años de', details: 'Experiencia' },
 		{ title: '20', subtitle: 'Años de', details: 'Experiencia' }
 	];
+
+	const navigateToContact = () => {
+		goto('/contact-us');
+	};
 </script>
 
 <main>
-	<div class="flex flex-row items-center">
-		<div class="pl-15">
-			<h1 class="flex flex-col text-5xl leading-14 text-[#A1ADAF]">
+	<div class="flex flex-row items-center p-7 lg:p-0">
+		<div class="lg:pl-15">
+			<h1
+				class="flex flex-col text-center text-4xl leading-10 text-[#A1ADAF] sm:text-5xl sm:leading-14 lg:text-start"
+			>
 				Despacho <span class="font-semibold text-[#397A80]">Gonzalez Ruiz Auditores, S.C.</span>
 			</h1>
-			<p class="my-10 text-justify text-base tracking-widest">
+			<p class="my-10 text-center text-sm tracking-widest sm:text-base lg:text-start">
 				Somos un despacho de auditores con más de 20 años de experiencia en la prestación de
 				servicios de auditoría, consultoría y asesoramiento fiscal.
 			</p>
-			<SecondaryButton title="Quienes somos" />
-			<div class="mt-10 flex flex-row items-end justify-center gap-4">
+			<div class="flex justify-center lg:justify-start">
+				<SecondaryButton title="Quienes somos" />
+			</div>
+			<div class="mt-10 flex flex-row items-end justify-center gap-4 lg:justify-start">
 				{#each information as item, index}
 					<div class="flex flex-col items-center">
-						<h2 class="text-5xl font-semibold text-[#397A80]">{item?.title}</h2>
-						<span class="flex flex-col items-center font-semibold text-[#A1ADAF]"
+						<h2 class="text-4xl font-semibold text-[#397A80] sm:text-5xl">{item?.title}</h2>
+						<span
+							class="flex flex-col items-center text-sm font-semibold text-[#A1ADAF] sm:text-base"
 							>{item?.subtitle} <span class="text-[#397A80]">{item?.details}</span>
 						</span>
 					</div>
@@ -35,9 +45,13 @@
 				{/each}
 			</div>
 		</div>
-		<img class="max-h-[700px] max-w-[700px]" src="/images/init-image.png" alt="init" />
+		<img
+			class="hidden h-[550px] w-[500px] lg:block xl:h-[700px] xl:w-[700px]"
+			src="/images/init-image.png"
+			alt="init"
+		/>
 	</div>
-	<div class="bg-secondary px-20">
+	<div class="bg-[#F3F3F3] xl:px-20">
 		<Section
 			image="auditories_image"
 			title="Auditorias"
@@ -46,7 +60,7 @@
 			button="Categorías"
 		/>
 	</div>
-	<div class="w-full bg-white px-20">
+	<div class="w-full bg-white xl:px-20">
 		<Section
 			image="contribution"
 			title="Contribución"
@@ -56,17 +70,17 @@
 			reverseRow={true}
 		/>
 	</div>
-	<div class="bg-sidebar flex w-full flex-row items-center pr-20">
-		<div class="basis-1/2">
+	<div class="bg-sidebar flex w-full flex-row items-center justify-center p-7 lg:p-0 xl:pr-20">
+		<div class="hidden basis-1/2 lg:block">
 			<img src="/images/asesories.png" alt="asesorias" />
 		</div>
-		<div class="flex basis-1/2 flex-col items-center">
-			<h2 class="font-semibold text-[#397A80] text-4xl">Hablar con un Especialista</h2>
-			<p class="text-center tracking-widest py-10">
+		<div class="flex w-full flex-col items-center lg:basis-1/2">
+			<h2 class="text-center text-4xl font-semibold text-[#397A80]">Hablar con un Especialista</h2>
+			<p class="py-5 md:py-10 lg:py-5 text-center text-sm sm:text-base tracking-widest">
 				Si desea hablar con un especialista para encontrar la solución adecuada para su empresa,
 				regístrese para una asesoría gratuita.
 			</p>
-			<PrimaryButton title="Contactar" />
+			<PrimaryButton onClick={navigateToContact} title="Contactar" />
 		</div>
 	</div>
 </main>

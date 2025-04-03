@@ -4,13 +4,17 @@
 	let { title, showLabel = false, details, button = '', image = '', reverseRow = false } = $props();
 </script>
 
-<div class="flex w-full {reverseRow ? 'flex-row-reverse' : ''} flex-row items-center">
+<div
+	class="flex w-full {reverseRow
+		? 'lg:flex-row-reverse'
+		: ''} items-center gap-5 md:gap-10 p-7 md:flex-col-reverse lg:flex-row lg:gap-0 lg:p-0"
+>
 	{#if image}
-		<div class="flex basis-1/2 {reverseRow ? 'justify-end' : 'justify-start'} ">
-			<img class="h-[572px] max-w-[500px]" src="/images/{image}.png" alt="auditories" />
+		<div class="hidden basis-1/2 md:flex {reverseRow ? 'justify-end' : 'justify-start'} ">
+			<img class="md:h-[300px] md:w-[300px] md:rounded-2xl lg:rounded-none lg:h-[500px] lg:min-w-[500px]" src="/images/{image}.png" alt="auditories" />
 		</div>
 	{/if}
-	<div class="basis-1/2 w-full">
+	<div class="w-full xl:basis-1/2 lg:p-6 xl:p-0">
 		<div class="flex w-full flex-col">
 			<div class="flex flex-row justify-between">
 				<div class="flex flex-col">
@@ -26,7 +30,7 @@
 				{/if}
 			</div>
 			<hr class="bg-primary mt-8 h-0.5 border-0" />
-			<p class="mt-8 text-justify leading-7 tracking-widest">{details}</p>
+			<p class="mt-8 text-justify text-sm tracking-widest sm:text-base sm:leading-7">{details}</p>
 			<div class="mt-12 flex justify-center">
 				{#if button.length}
 					<SecondaryButton title={button} />
