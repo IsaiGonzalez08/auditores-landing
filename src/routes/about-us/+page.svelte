@@ -3,7 +3,7 @@
 </script>
 
 <SectionHeader title="Sobre Nosotros" image="about-us" />
-<main class="w-full p-10 xl:px-24 lg:py-20">
+<main class="w-full p-10 lg:p-15">
 	<div class="flex w-full flex-col-reverse sm:flex-row items-center justify-around gap-15">
 		<div class="basis-1/2">
 			<img class="rounded-2xl sm:rounded-none h-[400px]" src="/images/about-us-subsection.png" alt="subsection-about" />

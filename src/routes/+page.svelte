@@ -59,7 +59,7 @@
 			alt="init"
 		/>
 	</div>
-	<div class="bg-[#F3F3F3] xl:px-20">
+	<div class="bg-[#F3F3F3] xl:px-15">
 		<Section
 			image="auditories_image"
 			title="Auditorias"
@@ -69,7 +69,7 @@
 			onClick={navigateToServices}
 		/>
 	</div>
-	<div class="w-full bg-white xl:px-20">
+	<div class="w-full bg-white xl:px-15">
 		<Section
 			image="contribution"
 			title="Contribución"

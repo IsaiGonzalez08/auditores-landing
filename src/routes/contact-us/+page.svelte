@@ -24,7 +24,7 @@
 
 <SectionHeader title="Contáctanos" image="contact-header" />
 
-<div class="p-5 md:p-8 xl:p-20">
+<div class="p-5 md:p-8 xl:p-15">
 	<p class="text-3xl font-semibold text-[#397A80]">Contacto</p>
 	<p class="font-light text-[#A1ADAF]">González Ruiz Auditores</p>
 	<hr class="bg-primary mt-4 h-0.5 w-full sm:w-1/2 border-none" />

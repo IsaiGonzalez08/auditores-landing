@@ -14,14 +14,14 @@
 					tags: ['Auditoría', 'Finanzas']
 				},
 				{
-					image: 'audit-card1',
+					image: 'audit-card2',
 					title: 'Auditoría fiscal',
 					details:
 						'Se realiza para empresas que opten a dictaminar sus estados financieros de acuerdo con el Código Fiscal.',
 					tags: ['Auditoría']
 				},
 				{
-					image: 'audit-card1',
+					image: 'audit-card3',
 					title: 'Auditoría de IMSS',
 					details:
 						'Se centra en analizar los procesos administrativos en empresas para verificar que lleven a cabo sus operaciones.',
@@ -33,7 +33,7 @@
 			title: 'Dictamenes',
 			services: [
 				{
-					image: 'audit-card1',
+					image: 'dicta-card1',
 					title: 'Dictamen de enajenación de acciones',
 					details: 'Realizamos servicios de valuación de empresas.',
 					tags: ['Contribución', 'Finanzas']
@@ -44,21 +44,21 @@
 			title: 'Otros Servicios',
 			services: [
 				{
-					image: 'audit-card1',
+					image: 'serv-card1',
 					title: 'Contabilidad general',
 					details:
 						'Realizamos servicios de valuación de empresas o de activos, para diferentes objetivos.',
 					tags: ['Contribución', 'Finanzas']
 				},
 				{
-					image: 'audit-card1',
+					image: 'serv-card2',
 					title: 'Determinación de cuotas al IMSS',
 					details:
 						'Servicios en procesos de liquidación, incluyendo que nuestros socios funjan como liquidadores.',
 					tags: ['Contribución', 'Finanzas']
 				},
 				{
-					image: 'audit-card1',
+					image: 'serv-card3',
 					title: 'Determinación de impuestos locales',
 					details: 'Soluciones en este aspecto, análisis de los objetivos de las empresas.',
 					tags: ['Contribución']
@@ -70,7 +70,7 @@
 
 <SectionHeader title="Servicios" image="services-header" />
 
-<div class="p-5 md:p-8 xl:p-20">
+<div class="p-5 md:p-8 xl:p-15">
 	{#if servicesCards.length}
 		<div class="flex flex-col">
 			{#each servicesCards as item}

@@ -9,7 +9,7 @@
 </script>
 
 <div class="flex h-max w-80 flex-col rounded-2xl border-2 border-[#397a80]">
-	<img class="max-h-44 rounded-t-[14px]" src="/images/{image}.png" alt="card" />
+	<img class="max-h-44 min-h-44 rounded-t-[14px]" src="/images/{image}.png" alt="card" />
 	<div class="flex flex-col gap-2 p-4">
 		<h2 class="min-h-14 text-xl font-semibold text-[#397A80]">{title}</h2>
 		<p class="min-h-20 text-sm font-light tracking-widest">{details}</p>
