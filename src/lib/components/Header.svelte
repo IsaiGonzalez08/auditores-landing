@@ -14,7 +14,7 @@
 		<a href="about-us">Nosotros</a>
 		<a href="services">Servicios</a>
 		<a href="contact-us">Contáctanos</a>
-		<li>Software fiscal</li>
+		<a href="softwares">Software fiscal</a>
 	</ul>
 	<div class="hidden xl:block">
 		<PrimaryButton onClick={navigateToContact} title="Asesorías" />
